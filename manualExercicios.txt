@@ -1,0 +1,30 @@
+exercicio01
+crie um programa que escreve na tela "hello world"
+
+exercicio02
+boas vindas ao usuario
+
+exercicio03
+soma de dois valores
+
+
+exercicio04
+retrata a biblioteca string e seus usos
+
+exercicio05
+antecessor e sucessor
+
+exercicio06
+ Dobro, Triplo, Raiz Quadrada
+
+ exercicio07
+ media aritmetrica
+
+ exercicio08
+ conversor de medidas
+
+ exercicio09
+ tabuada 1 ate 10
+
+ exercicio 10
+ conversao de moeda(real para dolar)
