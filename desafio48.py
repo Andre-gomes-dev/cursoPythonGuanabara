@@ -4,9 +4,10 @@ i = 0
 soma = 0
 #primeiro achar o impar
 while i <= 500:
-        if i % 2 == 1:
-            impar.append(i)
-            soma = impar[i]
+        resultado = i /  3
+        if i % 2 == 1 and  resultado.is_integer:   
+                impar.append(i)
+                soma = soma + i
         i+=1
-print(impar) 
+print(len(impar)) 
 print(soma)   
