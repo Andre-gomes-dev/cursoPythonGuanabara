@@ -21,16 +21,17 @@ while True:
         
     if resposta == "N":
         break
-maior =  max(pesos)
-menor =  min(pesos)
-tamanho =  len(nomes)
 
 
 
 
-for valor in pesos:
-     if valor == maior:
-         print(valor) 
+juncao =  list(zip(nomes, pesos))
+maior =  max(juncao)
+menor =  min(juncao)
+tamanho =  len(juncao)
+for valor in juncao:
+     if valor == maior[1]:
+         print(valor[0]) 
      
 print("oi maior peso foi: {}".format(maior))
 print("o menor peso foi: {}".format(menor))
