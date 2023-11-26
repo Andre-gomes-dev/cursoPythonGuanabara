@@ -27,7 +27,7 @@ while True:
 
 juncao =  list(zip(nomes, pesos))
 maior =  max(juncao)
-menor =  min(juncao)
+menor =  min(juncao[1])
 tamanho =  len(juncao)
 for valor in juncao:
      if valor == maior[1]:
