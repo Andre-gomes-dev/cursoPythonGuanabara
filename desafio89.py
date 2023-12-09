@@ -1,13 +1,10 @@
-
-=======
 lista = []
 pessoas = []
 
-
 while True:
     nome  = input("NOME: ")
-    nota1 = input("NOTA1: ")
-    nota2 = input("NOTA2: ")
+    nota1 = float(input("NOTA1: "))
+    nota2 = float(input("NOTA2: "))
     pessoas.append(nome)
     pessoas.append(nota1)
     pessoas.append(nota2)
@@ -41,24 +38,24 @@ print()
 print("="*30) 
 
 
-for elemento in range(0, len(lista)):
-    for elemen in range(0, len(lista)):
-        print(f"{lista[elemento][elemen]}", end="  ")
+
+for posicao, elemento in  enumerate(lista):
+   notas = lista[posicao][1], lista[posicao][2] 
+   media =  sum(notas) /  len(notas)
+   arredondaMedia =  round(media, 1) 
+   print(f"{posicao}   {lista[posicao][0]}        {arredondaMedia:<4}") 
 
 
 #LOGICA DE pedir notas de alunos
 while True:
-    posicao = int(input("Mostrar notas de qual aluno?: 999 interrompe"))
+    posicao = int(input("Mostrar notas de qual aluno? (999 interrompe): "))
     if posicao == 999:
         print("encerrando")
         print("<<< VOLTE SEMPRE >>>")
         break
     else:
         print("="*30)
-        print(f"notas de {lista[posicao][0]} [{lista[posicao]}]")
+        print(f"notas de {lista[posicao][0]}  são [{lista[posicao][1]}, {lista[posicao][2]}]")
         print("="*30)
         
 
-
-
->>>>>>> 72d0dd154a47afbe4f4165ada409941650ca4025
