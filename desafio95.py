@@ -1,11 +1,11 @@
 gols = []
-jogadores = []
+jogadores = {}
 acaoJogador = {}
-
+nomeJogador = input("Nome do jogador: ")
 partidasJog = int(input("Quantas partidas foram jogadas: "))
 
 for partida in range(1, partidasJog+1):
-   gol =  input(f"Quantos gols na partida {partida}? ")
+   gol =  int(input(f"Quantos gols na partida {partida}? "))
    gols.append(gol) 
 print(gols)
 resposta = ""
@@ -20,3 +20,6 @@ while resposta not in ["S", "N"]:
         print("continue")
         continue 
     
+totalGols =  sum(gols)
+jogadores = {"nome": nomeJogador, "gols": partidasJog, "total": "totalGols"}
+print(jogadores.items())
