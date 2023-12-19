@@ -49,9 +49,8 @@ while True:
         break
     if buscador >= len(time):
         print(f"erro nao existe jogador com codigo  ao lado: {buscador}")
-    else{
+    else:
         print("-- LEVANTAMENTO DE JOGADOR")
-    }
 #tasks
     #colocar valores no dicionario e inserir numa lista.
 
