@@ -49,9 +49,14 @@ while True:
         break
     if buscador >= len(time):
         print(f"erro nao existe jogador com codigo  ao lado: {buscador}")
-    else{
-        print("-- LEVANTAMENTO DE JOGADOR")
-    }
+    else:
+        print(f"-- LEVANTAMENTO DE JOGADOR {time[buscador]["nome"]}:")
+        for indc, quantGols in enumerate(time[buscador]["gols"]):
+           print(f"no jogo {indc+1} fez {quantGols}") 
+    print("-"*40)       
 #tasks
     #colocar valores no dicionario e inserir numa lista.
+
+
+
 
